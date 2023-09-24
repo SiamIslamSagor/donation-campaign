@@ -4,7 +4,7 @@ import logo from "/Logo.png";
 const Header = () => {
   return (
     <div>
-      <div className="navbar container mx-auto">
+      <div className="navbar my-5 container mx-auto">
         <div className="navbar-start">
           <a className="normal-case text-xl">
             <img src={logo} alt="logo" />
@@ -12,7 +12,7 @@ const Header = () => {
         </div>
 
         <div className="navbar-end">
-          <div className="link-div hidden lg:flex gap-10">
+          <div className="link-div hidden md:flex gap-10">
             <NavLink className="font-bold text-xl" to="/">
               Home
             </NavLink>
@@ -25,7 +25,7 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="dropdown  dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10"
