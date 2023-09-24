@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/bghwxKp/Health.png",
+    "title": "Clean water for Children",
+    "category": "Health",
+    "description": "Provide clean and safe drinking water for children in need. Support our mission to give every child access to clean water and a brighter future. Together, we can make a difference.",
+    "price": "$279",
+    "card_color": "blue-100",
+    "category_color": "blue-200",
+    "text_color": "blue-400"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/B4R8svW/Education.png",
+    "title": "Good Education",
+    "category": "Education",
+    "description": "Support quality education initiatives for underprivileged students. Join us in shaping young minds and empowering the next generation through education.",
+    "price": "$299",
+    "card_color": "red-100",
+    "category_color": "red-200",
+    "text_color": "red-400"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/NWY5thD/Clothing.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "description": "Donate your gently used clothing to those in need. Help us make a positive impact by providing warm clothing to those facing cold winters.",
+    "price": "$289",
+    "card_color": "green-100",
+    "category_color": "green-200",
+    "text_color": "green-400"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/mvNmNQG/Food.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "description": "Support programs that ensure access to nutritious food for all. Together, we can combat hunger and promote healthier communities.",
+    "price": "$269",
+    "card_color": "red-100",
+    "category_color": "red-200",
+    "text_color": "red-400"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/mvNmNQG/Food.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "description": "Support programs that ensure access to nutritious food for all. Together, we can combat hunger and promote healthier communities.",
+    "price": "$269",
+    "card_color": "red-100",
+    "category_color": "red-200",
+    "text_color": "red-400"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/NWY5thD/Clothing.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "description": "Donate your gently used clothing to those in need. Help us make a positive impact by providing warm clothing to those facing cold winters.",
+    "price": "$289",
+    "card_color": "green-100",
+    "category_color": "green-200",
+    "text_color": "green-400"
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/B4R8svW/Education.png",
+    "title": "Good Education",
+    "category": "Education",
+    "description": "Support quality education initiatives for underprivileged students. Join us in shaping young minds and empowering the next generation through education.",
+    "price": "$299",
+    "card_color": "red-100",
+    "category_color": "red-200",
+    "text_color": "red-400"
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/bghwxKp/Health.png",
+    "title": "Clean water for Children",
+    "category": "Health",
+    "description": "Provide clean and safe drinking water for children in need. Support our mission to give every child access to clean water and a brighter future. Together, we can make a difference.",
+    "price": "$279",
+    "card_color": "blue-100",
+    "category_color": "blue-200",
+    "text_color": "blue-400"
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/bghwxKp/Health.png",
+    "title": "Clean water for Children",
+    "category": "Health",
+    "description": "Provide clean and safe drinking water for children in need. Support our mission to give every child access to clean water and a brighter future. Together, we can make a difference.",
+    "price": "$279",
+    "card_color": "blue-100",
+    "category_color": "blue-200",
+    "text_color": "blue-400"
+  },
+  {
+    "id": 10,
+    "img": "https://i.ibb.co/B4R8svW/Education.png",
+    "title": "Good Education",
+    "category": "Education",
+    "description": "Support quality education initiatives for underprivileged students. Join us in shaping young minds and empowering the next generation through education.",
+    "price": "$299",
+    "card_color": "red-100",
+    "category_color": "red-200",
+    "text_color": "red-400"
+  },
+  {
+    "id": 11,
+    "img": "https://i.ibb.co/NWY5thD/Clothing.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "description": "Donate your gently used clothing to those in need. Help us make a positive impact by providing warm clothing to those facing cold winters.",
+    "price": "$289",
+    "card_color": "green-100",
+    "category_color": "green-200",
+    "text_color": "green-400"
+  },
+  {
+    "id": 12,
+    "img": "https://i.ibb.co/mvNmNQG/Food.png",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "description": "Support programs that ensure access to nutritious food for all. Together, we can combat hunger and promote healthier communities.",
+    "price": "$269",
+    "card_color": "red-100",
+    "category_color": "red-200",
+    "text_color": "red-400"
+  }
+]
