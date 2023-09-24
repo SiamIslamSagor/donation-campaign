@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home.jsx";
 import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
-import Hero from "./Components/Hero/Hero.jsx";
+import HomeSection from "./Components/HomeSection/HomeSection.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +15,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero></Hero>,
+        element: <HomeSection></HomeSection>,
+        loader: () => fetch("data.json"),
       },
     ],
   },
