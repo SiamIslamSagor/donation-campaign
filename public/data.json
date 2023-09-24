@@ -6,9 +6,9 @@
     "category": "Health",
     "description": "Provide clean and safe drinking water for children in need. Support our mission to give every child access to clean water and a brighter future. Together, we can make a difference.",
     "price": "$279",
-    "card_color": "blue-100",
-    "category_color": "blue-200",
-    "text_color": "blue-400"
+    "card_color": "#0052FF26",
+    "category_color": "#0052FF33",
+    "text_color": "#0052FF"
   },
   {
     "id": 2,
@@ -17,9 +17,9 @@
     "category": "Education",
     "description": "Support quality education initiatives for underprivileged students. Join us in shaping young minds and empowering the next generation through education.",
     "price": "$299",
-    "card_color": "red-100",
-    "category_color": "red-200",
-    "text_color": "red-400"
+    "card_color": "#FF444A26",
+    "category_color": "#FF444A33",
+    "text_color": "#FF444A"
   },
   {
     "id": 3,
@@ -28,9 +28,9 @@
     "category": "Clothing",
     "description": "Donate your gently used clothing to those in need. Help us make a positive impact by providing warm clothing to those facing cold winters.",
     "price": "$289",
-    "card_color": "green-100",
-    "category_color": "green-200",
-    "text_color": "green-400"
+    "card_color": "#79C23F26",
+    "category_color": "#79C23F33",
+    "text_color": "#79C23F"
   },
   {
     "id": 4,
@@ -39,9 +39,9 @@
     "category": "Food",
     "description": "Support programs that ensure access to nutritious food for all. Together, we can combat hunger and promote healthier communities.",
     "price": "$269",
-    "card_color": "red-100",
-    "category_color": "red-200",
-    "text_color": "red-400"
+    "card_color": "#F8714726",
+    "category_color": "#F8714733",
+    "text_color": "#F87147"
   },
   {
     "id": 5,
@@ -50,9 +50,9 @@
     "category": "Food",
     "description": "Support programs that ensure access to nutritious food for all. Together, we can combat hunger and promote healthier communities.",
     "price": "$269",
-    "card_color": "red-100",
-    "category_color": "red-200",
-    "text_color": "red-400"
+    "card_color": "#F8714726",
+    "category_color": "#F8714733",
+    "text_color": "#F87147"
   },
   {
     "id": 6,
@@ -61,9 +61,9 @@
     "category": "Clothing",
     "description": "Donate your gently used clothing to those in need. Help us make a positive impact by providing warm clothing to those facing cold winters.",
     "price": "$289",
-    "card_color": "green-100",
-    "category_color": "green-200",
-    "text_color": "green-400"
+    "card_color": "#79C23F26",
+    "category_color": "#79C23F33",
+    "text_color": "#79C23F"
   },
   {
     "id": 7,
@@ -72,9 +72,9 @@
     "category": "Education",
     "description": "Support quality education initiatives for underprivileged students. Join us in shaping young minds and empowering the next generation through education.",
     "price": "$299",
-    "card_color": "red-100",
-    "category_color": "red-200",
-    "text_color": "red-400"
+    "card_color": "#FF444A26",
+    "category_color": "#FF444A33",
+    "text_color": "#FF444A"
   },
   {
     "id": 8,
@@ -83,9 +83,9 @@
     "category": "Health",
     "description": "Provide clean and safe drinking water for children in need. Support our mission to give every child access to clean water and a brighter future. Together, we can make a difference.",
     "price": "$279",
-    "card_color": "blue-100",
-    "category_color": "blue-200",
-    "text_color": "blue-400"
+    "card_color": "#0052FF26",
+    "category_color": "#0052FF33",
+    "text_color": "#0052FF"
   },
   {
     "id": 9,
@@ -94,9 +94,9 @@
     "category": "Health",
     "description": "Provide clean and safe drinking water for children in need. Support our mission to give every child access to clean water and a brighter future. Together, we can make a difference.",
     "price": "$279",
-    "card_color": "blue-100",
-    "category_color": "blue-200",
-    "text_color": "blue-400"
+    "card_color": "#0052FF26",
+    "category_color": "#0052FF33",
+    "text_color": "#0052FF"
   },
   {
     "id": 10,
@@ -105,9 +105,9 @@
     "category": "Education",
     "description": "Support quality education initiatives for underprivileged students. Join us in shaping young minds and empowering the next generation through education.",
     "price": "$299",
-    "card_color": "red-100",
-    "category_color": "red-200",
-    "text_color": "red-400"
+    "card_color": "#FF444A26",
+    "category_color": "#FF444A33",
+    "text_color": "#FF444A"
   },
   {
     "id": 11,
@@ -116,9 +116,9 @@
     "category": "Clothing",
     "description": "Donate your gently used clothing to those in need. Help us make a positive impact by providing warm clothing to those facing cold winters.",
     "price": "$289",
-    "card_color": "green-100",
-    "category_color": "green-200",
-    "text_color": "green-400"
+    "card_color": "#79C23F26",
+    "category_color": "#79C23F33",
+    "text_color": "#79C23F"
   },
   {
     "id": 12,
@@ -127,8 +127,8 @@
     "category": "Food",
     "description": "Support programs that ensure access to nutritious food for all. Together, we can combat hunger and promote healthier communities.",
     "price": "$269",
-    "card_color": "red-100",
-    "category_color": "red-200",
-    "text_color": "red-400"
+    "card_color": "#F8714726",
+    "category_color": "#F8714733",
+    "text_color": "#F87147"
   }
 ]

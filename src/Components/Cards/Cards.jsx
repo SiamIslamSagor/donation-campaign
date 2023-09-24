@@ -3,8 +3,7 @@ import Card from "../Card/Card";
 
 const Cards = ({ data }) => {
   return (
-    <div>
-      <h2>All Cards : {data.length}</h2>
+    <div className="container mx-auto my-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       {data.map(singleData => (
         <Card singleData={singleData} key={singleData.id}></Card>
       ))}
