@@ -1,7 +1,3 @@
-//
-
-//
-
 const getItemInLocalStorage = propertyName => {
   const storedValue = localStorage.getItem(propertyName);
   if (storedValue) {

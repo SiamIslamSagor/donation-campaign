@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 const DonateCard = ({ singleDonate }) => {
-  //   console.log(singleDonate);
   const {
     img,
     text_color,

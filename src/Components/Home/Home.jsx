@@ -29,7 +29,6 @@ const Home = () => {
 
   const handleDonationBox = id => {
     setDonatedDataInLc(id);
-    // show toast when click the donate btn
     toast("Donate Successfully");
   };
 
@@ -39,13 +38,10 @@ const Home = () => {
     navigate("/donation-details");
   };
 
-  /////////
   const donatedDataIds = getDonatedDataInLC();
-  const donatedData = data.filter(
-    singleData => donatedDataIds.includes(singleData.id) // array ar moddhe singleData id includes ache ki na?
+  const donatedData = data.filter(singleData =>
+    donatedDataIds.includes(singleData.id)
   );
-  // console.log(donatedData);
-  /////////
 
   useEffect(() => {
     const clickedStoredId = getItemInLocalStorage("id");
