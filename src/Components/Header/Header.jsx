@@ -16,7 +16,7 @@ const Header = () => {
             <NavLink className="font-bold text-xl" to="/">
               Home
             </NavLink>
-            <NavLink className="font-bold text-xl" to="/donation">
+            <NavLink className="font-bold text-xl" to="/donation-box">
               Donation
             </NavLink>
 

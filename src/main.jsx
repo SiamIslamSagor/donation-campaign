@@ -7,21 +7,26 @@ import Home from "./Components/Home/Home.jsx";
 import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
 import HomeSection from "./Components/HomeSection/HomeSection.jsx";
 import DonatePage from "./Components/DonatePage/DonatePage";
+import DonationBox from "./Components/DonationBox/DonationBox";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    loader: () => fetch("data.json"),
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: <HomeSection></HomeSection>,
-        loader: () => fetch("data.json"),
       },
       {
-        path: "/data/:dataId",
+        path: "/data",
         element: <DonatePage></DonatePage>,
+      },
+      {
+        path: "/donation-box",
+        element: <DonationBox></DonationBox>,
       },
     ],
   },
