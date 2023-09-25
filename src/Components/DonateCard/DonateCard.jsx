@@ -1,22 +1,40 @@
 import PropTypes from "prop-types";
 const DonateCard = ({ singleDonate }) => {
   //   console.log(singleDonate);
-  const { img, text_color, category_color, card_color } = singleDonate;
+  const {
+    img,
+    text_color,
+    category,
+    title,
+    price,
+    category_color,
+    card_color,
+  } = singleDonate;
   return (
-    <div>
-      <div
-        style={{ backgroundColor: card_color }}
-        className="flex items-center justify-center gap-7"
-      >
-        <div>
-          <img src={img} alt="" />
-        </div>
-        <div>
-          <p>category</p>
-          <h2>title</h2>
-          <h4>price</h4>
-          <button>view Details</button>
-        </div>
+    <div
+      style={{ backgroundColor: card_color }}
+      className={`flex flex-col max-sm:py-4 sm:flex-row gap-5 sm:items-center  rounded-lg`}
+    >
+      <img
+        className="max-sm:rounded-lg max-sm:px-4 md:rounded-l-lg sm:bg-black h-60"
+        src={img}
+        alt=""
+      />
+      <div style={{ color: text_color }} className="px-4">
+        <span
+          style={{ backgroundColor: category_color }}
+          className={` py-1 px-3 font-medium rounded-[4px]`}
+        >
+          {category}
+        </span>
+        <h2 className={`my-3 text-xl font-semibold`}>{price}</h2>
+        <h2 className={`my-3 text-black text-2xl font-bold`}>{title}</h2>
+        <button
+          style={{ backgroundColor: text_color }}
+          className="p-2 rounded-[4px] font-semibold text-white"
+        >
+          View Details
+        </button>
       </div>
     </div>
   );

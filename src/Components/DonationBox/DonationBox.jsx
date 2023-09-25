@@ -13,8 +13,7 @@ const DonationBox = () => {
   console.log(donatedData);
   return (
     <div className="container mx-auto">
-      <h2>All donation here</h2>
-      <div className="grid justify-center items-center  grid-cols-1 lg:grid-cols-2">
+      <div className="grid justify-center gap-5 items-center  grid-cols-1 xl:grid-cols-2">
         {donatedData.map(singleDonate => (
           <DonateCard
             singleDonate={singleDonate}
