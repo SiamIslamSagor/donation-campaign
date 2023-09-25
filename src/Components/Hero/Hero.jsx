@@ -20,8 +20,11 @@ const Hero = () => {
   };
 
   return (
-    <div style={bannerBgStyle} className="bg-blend-overlay">
-      <div className="h-[50vh] xl:h-[65vh] bg-[#FFFFFFF2] bg-white flex gap-10 flex-col justify-center items-center">
+    <div style={bannerBgStyle}>
+      <div
+        style={{ backgroundImage: donationImg }}
+        className="h-[50vh] xl:h-[65vh] flex bg-[#FFFFFFF2] gap-10 flex-col justify-center items-center"
+      >
         <h2 className="text-5xl text-center font-bold">
           I Grow By Helping People In Need
         </h2>
