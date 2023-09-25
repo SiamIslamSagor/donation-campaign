@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { Outlet, useLoaderData, useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import {
+  getDonatedDataInLC,
   getItemInLocalStorage,
   setDonatedDataInLc,
   setItemInLocalStorage,
@@ -16,6 +17,7 @@ export const ClickedCardDetailsContext = createContext(null);
 export const HandleDonationContext = createContext(null);
 export const SearchTextContext = createContext("");
 export const ToastContainerContext = createContext(null);
+export const DonatedDataContext = createContext([]);
 
 const Home = () => {
   const data = useLoaderData();
@@ -37,6 +39,14 @@ const Home = () => {
     navigate("/donation-details");
   };
 
+  /////////
+  const donatedDataIds = getDonatedDataInLC();
+  const donatedData = data.filter(
+    singleData => donatedDataIds.includes(singleData.id) // array ar moddhe singleData id includes ache ki na?
+  );
+  // console.log(donatedData);
+  /////////
+
   useEffect(() => {
     const clickedStoredId = getItemInLocalStorage("id");
     setClickedCardId(clickedStoredId);
@@ -44,25 +54,27 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      <ToastContainerContext.Provider value={ToastContainer}>
-        <SearchTextContext.Provider value={[searchText, setSearchText]}>
-          <HandleDonationContext.Provider value={handleDonationBox}>
-            <ClickedCardDetailsContext.Provider
-              value={[clickedCardDetails, setClickedCardDetails]}
-            >
-              <JsonDataContext.Provider value={data}>
-                <HandleCardClickContext.Provider value={handleCardClick}>
-                  <ClickCardIdContext.Provider
-                    value={[clickedCardId, setClickedCardId]}
-                  >
-                    <Outlet></Outlet>
-                  </ClickCardIdContext.Provider>
-                </HandleCardClickContext.Provider>
-              </JsonDataContext.Provider>
-            </ClickedCardDetailsContext.Provider>
-          </HandleDonationContext.Provider>
-        </SearchTextContext.Provider>
-      </ToastContainerContext.Provider>
+      <DonatedDataContext.Provider value={donatedData}>
+        <ToastContainerContext.Provider value={ToastContainer}>
+          <SearchTextContext.Provider value={[searchText, setSearchText]}>
+            <HandleDonationContext.Provider value={handleDonationBox}>
+              <ClickedCardDetailsContext.Provider
+                value={[clickedCardDetails, setClickedCardDetails]}
+              >
+                <JsonDataContext.Provider value={data}>
+                  <HandleCardClickContext.Provider value={handleCardClick}>
+                    <ClickCardIdContext.Provider
+                      value={[clickedCardId, setClickedCardId]}
+                    >
+                      <Outlet></Outlet>
+                    </ClickCardIdContext.Provider>
+                  </HandleCardClickContext.Provider>
+                </JsonDataContext.Provider>
+              </ClickedCardDetailsContext.Provider>
+            </HandleDonationContext.Provider>
+          </SearchTextContext.Provider>
+        </ToastContainerContext.Provider>
+      </DonatedDataContext.Provider>
     </div>
   );
 };

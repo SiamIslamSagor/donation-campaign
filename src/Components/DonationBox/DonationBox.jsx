@@ -1,15 +1,14 @@
 import { useContext, useState } from "react";
-import { JsonDataContext } from "../Home/Home";
-import { getDonatedDataInLC } from "../../localStorage";
+import { DonatedDataContext } from "../Home/Home";
 import DonateCard from "../DonateCard/DonateCard";
 
 const DonationBox = () => {
-  const data = useContext(JsonDataContext);
+  const donatedData = useContext(DonatedDataContext);
   const [donatedDataLength, setDonatedDataLength] = useState(4);
-  const donatedDataIds = getDonatedDataInLC();
+  /* const donatedDataIds = getDonatedDataInLC();
   const donatedData = data.filter(
     singleData => donatedDataIds.includes(singleData.id) // array ar moddhe singleData id includes ache ki na?
-  );
+  ); */
   return (
     <div className="container mx-auto my-20">
       <div className="grid justify-center gap-5 items-center  grid-cols-1 xl:grid-cols-2">
