@@ -3,10 +3,13 @@ import {
   ClickCardIdContext,
   HandleDonationContext,
   JsonDataContext,
+  ToastContainerContext,
 } from "../Home/Home";
 
 const DonatePage = () => {
   const handleDonationBox = useContext(HandleDonationContext);
+
+  const ToastContainer = useContext(ToastContainerContext);
 
   const [details, setDetails] = useState({});
 
@@ -40,6 +43,7 @@ const DonatePage = () => {
       </div>
       <h2 className="text-5xl my-8 font-bold">{title}</h2>
       <p className="text-gray-500 font-medium">{description}</p>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

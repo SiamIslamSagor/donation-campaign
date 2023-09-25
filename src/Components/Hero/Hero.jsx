@@ -13,7 +13,6 @@ const Hero = () => {
   const [searchText, setSearchText] = useContext(SearchTextContext);
   const handleSetInput = e => {
     setSearch(e.target.value);
-    console.log(search);
   };
 
   const handleSearchBtn = searchValue => {
