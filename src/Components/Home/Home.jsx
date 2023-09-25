@@ -34,7 +34,7 @@ const Home = () => {
   const handleCardClick = id => {
     setItemInLocalStorage(id);
     setClickedCardId(id);
-    navigate("/data");
+    navigate("/donation-details");
   };
 
   useEffect(() => {

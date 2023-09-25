@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <HomeSection></HomeSection>,
       },
       {
-        path: "/data",
+        path: "/donation-details",
         element: <DonatePage></DonatePage>,
       },
       {
