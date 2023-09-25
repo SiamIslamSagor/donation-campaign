@@ -6,7 +6,6 @@ import DonateCard from "../DonateCard/DonateCard";
 const DonationBox = () => {
   const data = useContext(JsonDataContext);
   const [donatedDataLength, setDonatedDataLength] = useState(4);
-  //   console.log(data);
   const donatedDataIds = getDonatedDataInLC();
   const donatedData = data.filter(
     singleData => donatedDataIds.includes(singleData.id) // array ar moddhe singleData id includes ache ki na?

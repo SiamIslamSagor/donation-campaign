@@ -8,6 +8,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
 import HomeSection from "./Components/HomeSection/HomeSection.jsx";
 import DonatePage from "./Components/DonatePage/DonatePage";
 import DonationBox from "./Components/DonationBox/DonationBox";
+import Statistics from "./Components/Statistics/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/donation-box",
         element: <DonationBox></DonationBox>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
       },
     ],
   },
