@@ -1,10 +1,23 @@
+import { useContext, useState } from "react";
 import donationImg from "/donation_img.jpg";
+import { SearchTextContext } from "../Home/Home";
 const Hero = () => {
   const bannerBgStyle = {
     backgroundImage: `url(${donationImg})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+  };
+
+  const [search, setSearch] = useState("");
+  const [searchText, setSearchText] = useContext(SearchTextContext);
+  const handleSetInput = e => {
+    setSearch(e.target.value);
+    console.log(search);
+  };
+
+  const handleSearchBtn = searchValue => {
+    setSearchText(searchValue);
   };
 
   return (
@@ -15,11 +28,15 @@ const Hero = () => {
         </h2>
         <div className="bg-white rounded-lg border border-[#DEDEDE]">
           <input
+            onChange={handleSetInput}
             className="outline-none text-xl px-2 md:px-6 w-[470px] max-sm:w-72 "
             type="text"
-            placeholder="Search here...."
+            placeholder="Search Categories here...."
           />
-          <button className="rounded-r-lg bg-red-500 text-white font-bold py-3 px-4 md:px-7 duration-700  hover:bg-red-400">
+          <button
+            onClick={() => handleSearchBtn(search)}
+            className="rounded-r-lg bg-red-500 text-white font-bold py-3 px-4 md:px-7 duration-700  hover:bg-red-400"
+          >
             Search
           </button>
         </div>
