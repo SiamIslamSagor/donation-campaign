@@ -7,34 +7,21 @@ import {
 } from "../Home/Home";
 
 const DonatePage = () => {
-  //   const [clickedCardDetails, setClickedCardDetails] = useContext(
-  //     ClickedCardDetailsContext
-  //   );
-  //   console.log(clickedCardDetails);
-
   const handleDonationBox = useContext(HandleDonationContext);
-  //   console.log(handleDonationBox);
 
   const [details, setDetails] = useState({});
 
   const data = useContext(JsonDataContext);
-  //   console.log(data);
+
   const [clickedCardId, setClickedCardId] = useContext(ClickCardIdContext);
-  //   console.log(clickedCardId);
+
   const clickedCardDetailsObj = data.find(
     singleObj => singleObj.id === clickedCardId
   );
   useEffect(() => {
     clickedCardDetailsObj && setDetails(clickedCardDetailsObj);
   }, [clickedCardDetailsObj]);
-  //   console.log(details);
-  //   console.log(clickedCardDetailsObj);
-  //   const { id, img, title, price, description, text_color } =
-  //     clickedCardDetailsObj || {};
-
   const { id, img, text_color, price, title, description } = details;
-  //   console.log(id, img, text_color, price, title, description);
-  //   console.log(details);
 
   return (
     <div className="container mx-auto mb-12">

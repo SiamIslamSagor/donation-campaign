@@ -29,7 +29,7 @@ const DonationBox = () => {
       >
         <button
           onClick={() => setDonatedDataLength(donatedData.length)}
-          className="btn btn-success text-white text-lg px-8"
+          className="btn btn-success bg-green-600 text-white text-lg px-8"
         >
           See All
         </button>
