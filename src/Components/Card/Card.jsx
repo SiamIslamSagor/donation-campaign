@@ -1,10 +1,16 @@
 import PropTypes from "prop-types";
+import { useContext } from "react";
+import { ClickCardIdContext, HandleCardClickContext } from "../Home/Home";
 const Card = ({ singleData }) => {
-  const { img, title, category, card_color, category_color, text_color } =
+  const { id, img, title, category, card_color, category_color, text_color } =
     singleData;
-  console.log(card_color, category_color, text_color);
+  const handleCardClick = useContext(HandleCardClickContext);
+  const [clickedCardId] = useContext(ClickCardIdContext);
+  // console.log(handleCardClick);
+  // console.log(clickedCardId);
   return (
     <div
+      onClick={() => handleCardClick(id)}
       style={{ backgroundColor: card_color }}
       className={`flex flex-col gap-5  rounded-lg`}
     >
@@ -25,6 +31,7 @@ const Card = ({ singleData }) => {
 Card.propTypes = {
   singleData: PropTypes.object,
   img: PropTypes.string,
+  id: PropTypes.string,
   title: PropTypes.string,
   category: PropTypes.string,
 };
