@@ -41,8 +41,9 @@ const Statistics = () => {
         fill="white"
         textAnchor="middle"
         dominantBaseline="central"
+        className="text-4xl font-medium"
       >
-        {`${(percent * 100).toFixed(0)}%`}
+        {`${(percent * 100).toFixed(1)}%`}
       </text>
     );
   };
@@ -58,6 +59,7 @@ const Statistics = () => {
           fill="#8884d8"
           labelLine={false}
           label={renderCustomizedLabel}
+          strokeWidth={4}
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index]} />
