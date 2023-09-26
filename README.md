@@ -1,8 +1,11 @@
-# React + Vite
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This is a website where users can help to fulfill the basic needs of people, donation can be made in four categories on this website, Health Education Clothing Food.
 
-Currently, two official plugins are available:
+- The web site is arranged in such a way that the user experience is very nice here, every donated data of the user is analyzed and shown on the statistical page through percentage. As a result, the user is aware of his donations. It's definitely a better user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This website is made responsive for all devices, so a user will enjoy a great user experience from any device. Each image tag on the website contains a description of the image in the old attribute. Important titles are given in HTML tags h2, h3, h4. As a result, it will yield good results in SEO as well.
+
+## 🔗 Page Live Links
+
+https://6512c54126684b087f0bde82--donation-campaign-541713.netlify.app/
