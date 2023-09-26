@@ -23,12 +23,16 @@ const DonatePage = () => {
   useEffect(() => {
     clickedCardDetailsObj && setDetails(clickedCardDetailsObj);
   }, [clickedCardDetailsObj]);
-  const { id, img, text_color, price, title, description } = details;
+  const { id, img, text_color, price, title, category, description } = details;
 
   return (
     <div className="container mx-auto mb-12">
       <div className="relative bg-[#0B0B0B80] rounded-lg">
-        <img className="w-full rounded-lg max-h-[700px]" src={img} alt="" />
+        <img
+          className="w-full rounded-lg max-h-[700px]"
+          src={img}
+          alt={`${category} Category Image`}
+        />
         {clickedCardId > 0 && (
           <div className="bg-[#0B0B0B80] rounded-b-[20px] w-full p-5 absolute bottom-0">
             <button

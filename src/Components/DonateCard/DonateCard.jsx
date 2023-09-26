@@ -22,7 +22,7 @@ const DonateCard = ({ singleDonate }) => {
       <img
         className="max-sm:rounded-lg max-sm:px-4 md:rounded-l-lg sm:bg-black h-60"
         src={img}
-        alt=""
+        alt={`${category} Category Image`}
       />
       <div style={{ color: text_color }} className="px-4">
         <span

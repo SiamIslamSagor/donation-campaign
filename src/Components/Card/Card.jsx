@@ -11,7 +11,7 @@ const Card = ({ singleData }) => {
       style={{ backgroundColor: card_color }}
       className={`flex flex-col gap-5  rounded-lg`}
     >
-      <img src={img} alt="" />
+      <img src={img} alt={`${category} Category Image`} />
       <div style={{ color: text_color }} className="px-4">
         <span
           style={{ backgroundColor: category_color }}
