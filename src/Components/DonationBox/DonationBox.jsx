@@ -7,6 +7,7 @@ const DonationBox = () => {
   const [donatedDataLength, setDonatedDataLength] = useState(4);
   return (
     <div className="container mx-auto my-20">
+      {/* {donatedData.length === 0 && <h2>No donation eat</h2>} */}
       <div className="grid justify-center gap-5 items-center  grid-cols-1 xl:grid-cols-2">
         {donatedData.slice(0, donatedDataLength).map(singleDonate => (
           <DonateCard

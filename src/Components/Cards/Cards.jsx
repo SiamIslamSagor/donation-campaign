@@ -9,7 +9,8 @@ const Cards = () => {
   const [searchData, setSearchData] = useState([]);
   useEffect(() => {
     const searchResult = data.filter(
-      singleData => searchText === singleData.category
+      singleData =>
+        searchText.toLowerCase() === singleData.category.toLowerCase()
     );
     setSearchData(searchResult);
   }, [data, searchText]);
