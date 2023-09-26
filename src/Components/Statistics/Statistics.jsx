@@ -55,7 +55,7 @@ const Statistics = () => {
           data={data}
           cx="50%"
           cy="50%"
-          outerRadius={180}
+          outerRadius={170}
           fill="#8884d8"
           labelLine={false}
           label={renderCustomizedLabel}
